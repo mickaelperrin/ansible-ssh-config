@@ -694,6 +694,7 @@ def change_host(options, **kwargs):
 
 
 def main():
+    from ansible.module_utils.basic import AnsibleModule
     module = AnsibleModule(
         argument_spec=dict(
             state=dict(default='present', choices=['present', 'absent']),
